@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>e54a03bf-d110-4fe4-9f83-fd51ea2739d6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireEasyAuthBicepSample.ApiService\AspireEasyAuthBicepSample.ApiService.csproj" />
+    <ProjectReference Include="..\AspireEasyAuthBicepSample.Web\AspireEasyAuthBicepSample.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.1" />
+    <PackageReference Include="Aspire.Hosting.Azure" Version="8.0.2" />
+  </ItemGroup>
+
+</Project>
